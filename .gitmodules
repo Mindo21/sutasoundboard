@@ -1,0 +1,3 @@
+[submodule "src/client"]
+	path = src/client
+	url = git@github.com:Mindo21/sutasoundboardclient.git
