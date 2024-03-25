@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "build": "npx tsc && cd src/client && npm run build",
+    "postinstall": "npm install --prefix ./src/client",
+    "build": "npx tsc && npm run build --prefix ./src/client",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
